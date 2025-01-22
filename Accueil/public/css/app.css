@@ -61,4 +61,39 @@ nav ul li:hover {
   border-bottom: 1px solid #f0f4f4;
 }
 
+.about {
+  padding-top: 4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f0f4f4;
+  padding-bottom: 1em;
+}
+.about h1 {
+  margin-bottom: 0.2em;
+  text-align: center;
+  letter-spacing: 0.5em;
+}
+.about h1 span {
+  color: #82368D;
+}
+.about .about1 {
+  background-color: #E1E5E6;
+  margin: 5%;
+  display: flex;
+  text-align: center;
+}
+.about .about1 img {
+  width: 50%;
+}
+.about .about1 .about2 {
+  color: black;
+  padding: 3em;
+  line-height: 2em;
+  text-align: left;
+}
+.about .about1 .about2 h3 {
+  color: #82368D;
+}
+
 /*# sourceMappingURL=app.css.map */

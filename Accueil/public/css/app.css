@@ -1,13 +1,19 @@
+@font-face {
+  font-family: "PKMN RBYGSC";
+  src: url("../public/fonts/PKMN RBYGSC.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 * {
   font-family: "Roboto", sans-serif;
 }
 
-* {
+body {
   margin: 0;
 }
 
 header {
-  background-image: url("../img/img-carousel1.jpg");
+  background-image: url("../img/img-carousel.jpeg");
   background-size: cover;
   height: 50rem;
 }
@@ -33,6 +39,7 @@ nav {
   backdrop-filter: blur(3px);
 }
 nav h1 {
+  font-family: "PKMN RBYGSC", sans-serif;
   display: flex;
   margin-bottom: 0.2em;
   text-align: center;
@@ -40,12 +47,15 @@ nav h1 {
   letter-spacing: 0.5em;
 }
 nav h1 span {
+  font-family: "PKMN RBYGSC", sans-serif;
   color: #82368D;
 }
 nav h1:hover {
+  font-family: "PKMN RBYGSC", sans-serif;
   color: #82368D;
 }
 nav h1:hover span {
+  font-family: "PKMN RBYGSC", sans-serif;
   color: white;
 }
 nav ul {
@@ -91,6 +101,7 @@ nav ul li:hover {
   background-color: #E1E5E6;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .formations div {
   padding: 3em;
@@ -123,21 +134,31 @@ nav ul li:hover {
 }
 
 .courte {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   justify-items: center;
+  flex-wrap: wrap;
 }
 .courte div {
-  opacity: 70%;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: auto;
+  margin: 5rem;
   background-color: #ecdec3;
-  width: 26em;
-  height: 25em;
+  width: 30em;
+}
+.courte div h1 span {
+  color: #82368D;
+}
+.courte div img {
+  width: 100%;
+  object-fit: cover;
 }
 
 .about {
   padding-top: 4em;
+  flex-wrap: wrap;
   display: flex;
   flex-direction: column;
   justify-content: center;

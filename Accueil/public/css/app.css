@@ -25,9 +25,9 @@ header div {
   gap: 2em;
 }
 header div div {
-  width: 2em;
-  height: 0.5em;
-  background: white;
+  width: 3em;
+  height: 0.3em;
+  background: #E7EAEB;
   border-radius: 1em;
 }
 
@@ -105,11 +105,11 @@ nav ul li:hover {
 }
 .formations div {
   padding: 3em;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
   margin: 2rem;
 }
 .formations div h1 {
@@ -139,13 +139,13 @@ nav ul li:hover {
   flex-wrap: wrap;
 }
 .courte div {
-  border-radius: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
   flex: auto;
-  margin: 5rem;
-  background-color: #ecdec3;
+  margin: 1rem;
+  background-color: #c8d8e5;
+  backdrop-filter: blur(7px);
   width: 30em;
 }
 .courte div h1 span {
@@ -190,6 +190,59 @@ nav ul li:hover {
 }
 .about .about1 .about2 h3 {
   color: #82368D;
+}
+.partenaire {
+  padding-left: 5%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #E1E5E6;
+}
+.partenaire div img {
+  width: 10%;
+}
+
+.social {
+  padding-top: 4em;
+  display: flex;
+  align-items: center;
+  background-color: #E1E5E6;
+}
+.social div {
+  padding-left: 7%;
+  display: flex;
+  gap: 1em;
+}
+.social div img {
+  width: 15%;
+}
+
+footer {
+  padding: 1.1em;
+  display: flex;
+  background-color: #E1E5E6;
+  align-items: center;
+  justify-content: center;
+}
+footer .container {
+  display: flex;
+  gap: 15rem;
+}
+footer .container p {
+  font-size: 0.7em;
+}
+footer .container p span {
+  color: #82368D;
+}
+footer .container p strong {
+  color: #82368D;
+}
+
+@media (max-width: 425px) {
+  footer .container p {
+    font-size: 0.3em;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

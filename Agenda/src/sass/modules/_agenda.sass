@@ -1,0 +1,44 @@
+h1
+  text-align: center
+  font-weight: bold
+  color: white
+div
+  display: flex
+  .calendar
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    margin-top: 10em
+    margin-bottom: 10em
+    padding: 0
+    gap: 5px
+    width: 60%
+    li
+      position: relative
+      padding: 15px
+      transform: rotate(8deg)
+      width: 76%
+      background: #fff
+      display: flex
+      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.8)
+      border-bottom-left-radius: 5px
+      border-top-left-radius: 5px
+      time
+        position: relative
+        background: #fff
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 20px
+        box-sizing: border-box
+        box-shadow: 0 20px 20px rgba(0, 0, 0, 0.8)
+        transform: translateX(-76px)
+        font-size: 20px
+        cursor: pointer
+        overflow: hidden
+        border-bottom-left-radius: 5px
+        border-top-left-radius: 5px
+    li:hover
+      color: #82368B
+      font-size: 20px

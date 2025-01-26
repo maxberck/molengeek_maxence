@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #343a40;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.coworking {
+  display: flex;
+  flex-direction: column;
+}
+.coworking .container {
+  margin-bottom: 2em;
+  background: #e4e4e4;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.coworking .container .left, .coworking .container .right {
+  width: 50%;
+  padding: 10px;
+}
+.coworking .container .left {
+  padding: 1em;
+  text-align: left;
+}
+.coworking .container .left div {
+  padding-left: 1em;
+}
+.coworking .container .left div ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+.coworking .container .left div ul li {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+.coworking .container .left h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #82368B;
+}
+.coworking .container .left p {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+.coworking .container .left h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #82368B;
+}
+.coworking .container .right {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+  .coworking .container {
+    padding: 0;
+  }
+  .coworking .container .left {
+    text-align: left;
+  }
+  .coworking .container .left h1 {
+    font-size: 1.3rem;
+  }
+  .coworking .container .left h2 {
+    font-size: 1rem;
+  }
+  .coworking .container .left h3 {
+    font-size: 0.8rem;
+  }
+  .coworking .container .left p {
+    font-size: 0.5rem;
+  }
+  .coworking .container .left div ul li {
+    font-size: 0.5rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .coworking .container {
+    flex-direction: column-reverse;
+  }
+  .coworking .container .left, .coworking .container .right {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=app.css.map */

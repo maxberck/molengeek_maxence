@@ -1,19 +1,82 @@
 .job
   display: flex
   flex-direction: column
+  align-items: center
+  padding: 3em
+  background: #eaf6ff
+
   h1
-    color: black
-    margin: 6vh
-  div
-    display: flex
-    flex-direction: row
-    div
-      box-shadow: 0 5px 5px rgba(0, 0, 0, 0.8)
-      background: #c8d8e5
-      padding: 1em
-      margin: 2em
-      width: 33%
+    color: #1a3b5d
+    font-size: 2.5em
+    margin-bottom: 2em
+    font-weight: 600
+    font-family: 'Poppins', sans-serif
+    text-align: center
+
+  .metier
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+    gap: 2em
+    width: 100%
+
+    .card
+      background: #ffffff
+      border-radius: 12px
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1)
+      padding: 2em
+      border: 1px solid #dfeaff
       display: flex
       flex-direction: column
+      justify-content: space-between
+      transition: border-color 0.2s ease
+
+      &:hover
+        border-color: #a8d3ff
+
+      h2, h3
+        color: #1a3b5d
+        font-size: 1.5em
+        font-weight: 500
+        margin-bottom: 1em
+        font-family: 'Poppins', sans-serif
+
+      h4
+        color: #5d7d98
+        font-size: 1.1em
+        font-weight: 400
+        margin-bottom: 0.5em
+
       p
-        padding-left: 1em
+        color: #4a6a84
+        font-size: 1em
+        line-height: 1.6em
+        margin-bottom: 1em
+
+      ul
+        list-style: none
+        padding: 0
+        margin: 0
+        margin-bottom: 1em
+
+        li
+          color: #4a6a84
+          font-size: 1em
+          margin-bottom: 0.5em
+          padding-left: 1.5em
+          position: relative
+
+          &:before
+            content: "•"
+            color: #a8d3ff
+            position: absolute
+            left: 0
+            font-size: 1.2em
+            line-height: 1
+
+      a
+        color: #007acc
+        text-decoration: none
+        font-weight: 500
+
+        &:hover
+          text-decoration: underline

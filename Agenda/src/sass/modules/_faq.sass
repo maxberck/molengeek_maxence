@@ -2,13 +2,45 @@
   display: flex
   flex-direction: column
   align-items: center
-  div
-    flex-direction: column
-    background-color: #E7EAEB
-    width: 80%
-    margin-bottom: 20px
-    padding: 20px
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.8)
+  padding: 3em 2em
+  background: #D1EFFA // Transition douce entre les sections
+
   h1
-    padding: 7vh
-    color: black
+    font-family: 'Poppins', sans-serif
+    font-size: 2.5em
+    color: #1A3B5D
+    margin-bottom: 2em
+    text-align: center
+    font-weight: 600
+
+  div
+    background: #FFFFFF
+    border-radius: 12px
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1)
+    padding: 1.5em 2em
+    width: 80%
+    max-width: 800px
+    margin-bottom: 1.5em
+    border: 1px solid #EAF6FF
+    transition: border-color 0.2s ease
+
+    &:hover
+      border-color: #B3E7FB
+
+    h3
+      font-family: 'Poppins', sans-serif
+      font-size: 1.4em
+      color: #1A3B5D
+      font-weight: 500
+      margin-bottom: 0.5em
+
+    p
+      font-family: 'Poppins', sans-serif
+      font-size: 1em
+      color: #4A6A84
+      line-height: 1.6em
+
+  @media (max-width: 768px)
+    div
+      width: 90%
+      padding: 1.2em

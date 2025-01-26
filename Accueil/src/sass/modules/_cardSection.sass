@@ -3,7 +3,7 @@
   flex-direction: column
   gap: 2rem
   margin: 4rem
-  div
+  .divPro
     background-color: #E1E5E6
     display: flex
     flex-direction: row
@@ -18,6 +18,11 @@
         color: black
         span
           color: #82368D
-
-
-
+@media (max-width: 768px)
+  .propal
+    .divPro
+      flex-direction: column
+      align-items: center
+      gap: 2rem
+      img
+        width: 75%

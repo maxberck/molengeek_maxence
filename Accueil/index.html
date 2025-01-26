@@ -5,42 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
     <link rel="stylesheet" href="./public/css/app.css">
+    <link rel="stylesheet" href="src/sass/modules/_header.sass">
 </head>
 <body>
     <header>
         <nav>
             <h1>MOLEN<span>GEEK</span></h1>
+            <button class="burger-menu" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <ul>
-                <li>Accueil</li>
-                <li>Nos formations</li>
-                <li>Coworking</li>
-                <li>Agenda</li>
+                <li><a href="./index.html">Accueil</a></li>
+                <li><a href="../Formation/index.html">Nos formations</a></li>
+                <li><a href="../Coworking/index.html">Coworking</a></li>
+                <li><a href="../Agenda/index.html">Agenda</a></li>
             </ul>
         </nav>
-        <div>
-            <div id="carou1"></div>
-            <div id="carou2"></div>
-            <div id="carou3"></div>
+        </nav>
+        <div class="carousel">
+            <div id="carou1" class="carousel"></div>
+            <div id="carou2" class="carousel"></div>
+            <div id="carou3" class="carousel"></div>
         </div>
     </header>
     <main>
         <section class="propal">
-            <div>
+            <div class="divPro">
                 <img src="./public/img/forma.png">
                 <div>
                     <h1>Nos <span>formations</span></h1>
                     <p></p>
                 </div>
             </div>
-            <div>
+            <div class="divPro">
                 <img src="./public/img/cowork.png">
                 <div>
                     <h1><span>Coworking</span></h1>
                     <p></p>
                 </div>
             </div>
-
-            <div>
+            <div class="divPro">
                 <img src="./public/img/caland.png">
                 <div>
                     <h1><span>Agenda</span></h1>
@@ -109,11 +115,11 @@
         <section class="social">
             <div>
                 <img src="public/img/instagram-1-svgrepo-com%20(1).svg">
-                <h3>Facebook</h3>
+                <h3>Instagram</h3>
             </div>
             <div>
                 <img src="public/img/twitter-color-svgrepo-com.svg">
-                <h3>Facebook</h3>
+                <h3>Twitter</h3>
             </div>
             <div>
                 <img src="public/img/facebook-176-svgrepo-com%20(1).svg">
@@ -121,7 +127,7 @@
             </div>
             <div>
                 <img src="public/img/tiktok-svgrepo-com.svg">
-                <h3>Facebook</h3>
+                <h3>TikTok</h3>
             </div>
         </section>
     </main>

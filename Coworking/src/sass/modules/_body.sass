@@ -1,0 +1,62 @@
+.coworking
+  display: flex
+  flex-direction: column
+  .container
+    margin-bottom: 2em
+    background: #e4e4e4
+    display: flex
+    flex-direction: row
+    width: 100%
+    .left, .right
+      width: 50%
+      padding: 10px
+    .left
+      padding: 1em
+      text-align: left
+      div
+        padding-left: 1em
+        ul
+          list-style-type: none
+          padding: 0
+          margin-bottom: 20px
+          li
+            font-size: 1.1rem
+            margin: 10px 0
+      h1
+        font-size: 2.5rem
+        margin-bottom: 20px
+        color: #82368B
+      p
+        font-size: 1.25rem
+        margin-bottom: 20px
+      h2
+        font-size: 2.2rem
+        margin-bottom: 20px
+        color: #82368B
+    .right
+      display: flex
+      flex-direction: column
+@media screen and (max-width: 768px)
+  .coworking
+    .container
+      padding: 0
+      .left
+        text-align: left
+        h1
+          font-size: 1.3rem
+        h2
+          font-size: 1rem
+        h3
+          font-size: .8rem
+        p
+          font-size: .5rem
+        div
+          ul
+            li
+              font-size: .5rem
+@media screen and (max-width: 425px)
+  .coworking
+    .container
+      flex-direction: column-reverse
+      .left, .right
+        width: 100%

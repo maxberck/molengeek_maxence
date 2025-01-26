@@ -1,6 +1,7 @@
 header
   background-image: url("../img/img-carousel.jpeg")
   background-size: cover
+  background-position: center
   height: 50rem
   div
     display: flex
@@ -13,4 +14,17 @@ header
       height: .3em
       background: #E7EAEB
       border-radius: 1em
-
+      &:hover
+        background: #FFA500
+@media (max-width: 1024px)
+  header
+    .carousel
+      margin-top: 30%
+@media (max-width: 768px)
+  header
+    .carousel
+      margin-top: 42%
+@media (max-width: 425px)
+  header
+    .carousel
+      margin-top: 78%

@@ -17,6 +17,7 @@ nav {
   justify-content: space-around;
   color: #fff;
   padding: 2em;
+  position: relative;
 }
 nav h1 {
   font-family: "PKMN RBYGSC", sans-serif;
@@ -43,14 +44,79 @@ nav ul {
   display: flex;
   justify-content: center;
   gap: 3em;
+  visibility: visible;
 }
 nav ul li {
   padding-bottom: 0.5em;
 }
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
 nav ul li:hover {
   border-bottom: 1px solid #f0f4f4;
 }
+nav .burger-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2em;
+  height: 2em;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+}
+nav .burger-menu span {
+  display: block;
+  width: 100%;
+  height: 0.25em;
+  background: #fff;
+  border-radius: 10px;
+}
 
+@media (max-width: 768px) {
+  nav {
+    align-items: center;
+  }
+  nav .burger-menu {
+    display: flex;
+    padding-top: 1em;
+    gap: 0.2em;
+  }
+  nav ul {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    margin: 0;
+    padding: 1em 0;
+    background: rgb(255, 255, 255);
+    width: 100%;
+    z-index: 1;
+  }
+  nav ul li {
+    color: #82368B;
+    margin: 1em;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: "PKMN RBYGSC", sans-serif;
+  }
+  nav.open ul {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@media (max-width: 425px) {
+  nav {
+    align-content: center;
+    justify-content: space-around;
+  }
+  nav h1 {
+    letter-spacing: 0;
+  }
+}
 .longue {
   display: flex;
   align-items: center;
@@ -61,23 +127,236 @@ nav ul li:hover {
 }
 .longue div {
   display: flex;
-}
-.longue div img {
-  width: 50%;
+  align-items: center;
+  flex-direction: column;
+  gap: 2em;
 }
 .longue div div {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+}
+.longue div div img {
+  width: 50%;
+}
+.longue div div div {
   width: 50%;
   display: flex;
   flex-direction: column;
   text-align: center;
   padding: 5em;
 }
-.longue div div p {
+.longue div div div p {
   font-size: 1.2em;
 }
-.longue div div h3 {
+.longue div div div h3 {
   padding-bottom: 1em;
   font-size: 2em;
+}
+
+@media (max-width: 768px) {
+  .longue div {
+    width: 70%;
+  }
+  .longue div h1 {
+    font-size: 2em;
+    padding: 1.5em;
+  }
+  .longue div div {
+    flex-direction: column;
+    width: 100%;
+  }
+  .longue div div img {
+    width: 100%;
+  }
+  .longue div div div {
+    width: 100%;
+    padding: 1.5em;
+  }
+  .longue div .divMil {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+}
+.for_courte {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+}
+.for_courte .courte {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  padding: 2em;
+  background: #F7FAFC;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 75%;
+}
+.for_courte .courte h1 {
+  font-size: 2.4em;
+  color: #2C5282;
+  text-align: center;
+  margin-bottom: 1em;
+}
+.for_courte .courte .formatC {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  padding: 1em;
+}
+.for_courte .courte .formatC:hover {
+  border-color: #63B3ED;
+}
+.for_courte .courte .formatC label {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2em;
+  color: #4A5568;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.for_courte .courte .formatC label span {
+  font-size: 0.9em;
+  color: #718096;
+  font-weight: 400;
+}
+
+.experience {
+  text-align: center;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.experience h1 {
+  font-size: 2.5rem;
+  color: #82368B;
+  margin-bottom: 20px;
+}
+.experience .video {
+  display: flex;
+  justify-content: center;
+  gap: 3em;
+  width: 100%;
+}
+.experience .video div {
+  width: 40%;
+  height: 25rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.experience .video div iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+@media (max-width: 425px) {
+  .experience .video {
+    align-items: center;
+    flex-direction: column;
+  }
+  .experience .video div {
+    width: 80%;
+  }
+}
+.contact {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 20px;
+  background-color: #f4f4f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+.contact .form, .contact .map {
+  flex: 1;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.contact .form {
+  height: 25rem;
+  padding: 20px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.contact .form h1 {
+  font-size: 2rem;
+}
+.contact .form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.contact .form form label {
+  font-size: 1rem;
+  color: #555;
+  font-weight: bold;
+}
+.contact .form form input, .contact .form form textarea {
+  padding: 1em;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #333;
+  outline: none;
+}
+.contact .form form input:focus, .contact .form form textarea:focus {
+  border-color: #4CAF50;
+}
+.contact .form form textarea {
+  height: 5em;
+}
+.contact .form form button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.contact .form form button:hover {
+  background-color: #45a049;
+}
+.contact .map {
+  background-color: #e5e5e5;
+  height: 27.5rem;
+}
+.contact .map iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact .form {
+    width: 80%;
+  }
+  .contact .form .form-container {
+    margin-bottom: 20px;
+    order: 1;
+  }
+  .contact .map {
+    width: 86%;
+  }
+  .contact .map iframe {
+    height: 25rem;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

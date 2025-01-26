@@ -65,6 +65,11 @@ nav h1 {
   padding-left: 0.35em;
   letter-spacing: 0.5em;
 }
+nav h1 a {
+  font-family: "PKMN RBYGSC", sans-serif;
+  text-decoration: none;
+  color: white;
+}
 nav h1 span {
   font-family: "PKMN RBYGSC", sans-serif;
   color: #82368D;
@@ -72,6 +77,11 @@ nav h1 span {
 nav h1:hover {
   font-family: "PKMN RBYGSC", sans-serif;
   color: #82368D;
+}
+nav h1:hover a {
+  font-family: "PKMN RBYGSC", sans-serif;
+  text-decoration: none;
+  color: #82368B;
 }
 nav h1:hover span {
   font-family: "PKMN RBYGSC", sans-serif;
@@ -180,6 +190,9 @@ nav .burger-menu span {
 .propal .divPro div h1 span {
   color: #82368D;
 }
+.propal .divPro div p {
+  width: 75%;
+}
 
 @media (max-width: 768px) {
   .propal .divPro {
@@ -189,6 +202,12 @@ nav .burger-menu span {
   }
   .propal .divPro img {
     width: 75%;
+  }
+  .propal .divPro div h1 {
+    text-align: center;
+  }
+  .propal .divPro div p {
+    width: 100%;
   }
 }
 .formations {
@@ -340,6 +359,11 @@ nav .burger-menu span {
     font-size: 0.5em;
   }
 }
+@media (max-width: 425px) {
+  .social {
+    padding-top: 1em;
+  }
+}
 footer {
   padding: 1.1em;
   display: flex;
@@ -362,6 +386,9 @@ footer .container p strong {
 }
 
 @media (max-width: 425px) {
+  footer .container {
+    gap: 5rem;
+  }
   footer .container p {
     font-size: 0.3em;
   }

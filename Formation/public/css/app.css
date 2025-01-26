@@ -9,6 +9,7 @@
 header {
   background-image: url("../img/formations.jpg");
   background-size: cover;
+  background-position: center;
   height: 50rem;
 }
 
@@ -27,6 +28,11 @@ nav h1 {
   padding-left: 0.35em;
   letter-spacing: 0.5em;
 }
+nav h1 a {
+  font-family: "PKMN RBYGSC", sans-serif;
+  text-decoration: none;
+  color: white;
+}
 nav h1 span {
   font-family: "PKMN RBYGSC", sans-serif;
   color: #82368D;
@@ -34,6 +40,11 @@ nav h1 span {
 nav h1:hover {
   font-family: "PKMN RBYGSC", sans-serif;
   color: #82368D;
+}
+nav h1:hover a {
+  font-family: "PKMN RBYGSC", sans-serif;
+  text-decoration: none;
+  color: #82368B;
 }
 nav h1:hover span {
   font-family: "PKMN RBYGSC", sans-serif;
@@ -356,6 +367,72 @@ nav .burger-menu span {
   }
   .contact .map iframe {
     height: 25rem;
+  }
+}
+.partenaire {
+  padding-left: 5%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #E1E5E6;
+}
+.partenaire div img {
+  width: 10%;
+}
+
+.social {
+  padding-top: 4em;
+  display: flex;
+  align-items: center;
+  background-color: #E1E5E6;
+}
+.social div {
+  padding-left: 7%;
+  display: flex;
+  gap: 1em;
+}
+.social div img {
+  width: 15%;
+}
+
+@media (max-width: 768px) {
+  .social div h3 {
+    font-size: 0.5em;
+  }
+}
+@media (max-width: 425px) {
+  .social {
+    padding-top: 1em;
+  }
+}
+footer {
+  padding: 1.1em;
+  display: flex;
+  background-color: #E1E5E6;
+  align-items: center;
+  justify-content: center;
+}
+footer .container {
+  display: flex;
+  gap: 15rem;
+}
+footer .container p {
+  font-size: 0.7em;
+}
+footer .container p span {
+  color: #82368D;
+}
+footer .container p strong {
+  color: #82368D;
+}
+
+@media (max-width: 425px) {
+  footer .container {
+    gap: 5rem;
+  }
+  footer .container p {
+    font-size: 0.3em;
   }
 }
 

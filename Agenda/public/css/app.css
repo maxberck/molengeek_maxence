@@ -136,10 +136,10 @@ h1 {
   color: white;
 }
 
-div {
+.agenda {
   display: flex;
 }
-div .calendar {
+.agenda .calendar {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -150,7 +150,7 @@ div .calendar {
   gap: 5px;
   width: 60%;
 }
-div .calendar li {
+.agenda .calendar li {
   position: relative;
   padding: 15px;
   transform: rotate(8deg);
@@ -161,7 +161,7 @@ div .calendar li {
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px;
 }
-div .calendar li time {
+.agenda .calendar li time {
   position: relative;
   background: #fff;
   display: flex;
@@ -176,45 +176,45 @@ div .calendar li time {
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px;
 }
-div .calendar li:hover {
+.agenda .calendar li:hover {
   color: #82368B;
   font-size: 20px;
 }
 
 @media (max-width: 768px) {
-  div .calendar {
+  .agenda .calendar {
     width: 50%;
   }
-  div .calendar li {
+  .agenda .calendar li {
     width: 50%;
     font-size: 1em;
   }
-  div .calendar li time {
+  .agenda .calendar li time {
     font-size: 1em;
   }
-  div .calendar li:hover {
+  .agenda .calendar li:hover {
     font-size: 1em;
   }
 }
 @media (max-width: 425px) {
-  div {
+  .agenda {
     flex-direction: column;
     align-items: center;
   }
-  div .calendar {
+  .agenda .calendar {
     width: 70%;
     margin: 1em 0;
   }
-  div .calendar li {
+  .agenda .calendar li {
     width: 70%;
     padding: 10px;
     font-size: 0.8rem;
     transform: rotate(0deg);
   }
-  div .calendar li time {
+  .agenda .calendar li time {
     font-size: 0.8rem;
   }
-  div .calendar li:hover {
+  .agenda .calendar li:hover {
     font-size: 0.85rem;
   }
 }
@@ -351,6 +351,42 @@ div .calendar li:hover {
   text-decoration: underline;
 }
 
+.partenaire {
+  padding-left: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E1E5E6;
+}
+.partenaire div img {
+  width: 10%;
+}
+
+.social {
+  padding-top: 4em;
+  display: flex;
+  align-items: center;
+  background-color: #E1E5E6;
+}
+.social div {
+  padding-left: 7%;
+  display: flex;
+  gap: 1em;
+}
+.social div img {
+  width: 15%;
+}
+
+@media (max-width: 768px) {
+  .social div h3 {
+    font-size: 0.5em;
+  }
+}
+@media (max-width: 425px) {
+  .social {
+    padding-top: 1em;
+  }
+}
 footer {
   padding: 1.1em;
   display: flex;
@@ -373,6 +409,9 @@ footer .container p strong {
 }
 
 @media (max-width: 425px) {
+  footer .container {
+    gap: 5rem;
+  }
   footer .container p {
     font-size: 0.3em;
   }

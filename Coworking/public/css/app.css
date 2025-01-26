@@ -1,18 +1,135 @@
 * {
+  font-family: "Roboto", sans-serif;
+}
+
+* {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f8f9fa;
-  color: #343a40;
-  line-height: 1.6;
-  padding: 20px;
+header {
+  background-image: url("../img/coworrking.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 50rem;
 }
 
+nav {
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+  padding: 2em;
+  position: relative;
+}
+nav h1 {
+  font-family: "PKMN RBYGSC", sans-serif;
+  display: flex;
+  margin-bottom: 0.2em;
+  text-align: center;
+  padding-left: 0.35em;
+  letter-spacing: 0.5em;
+}
+nav h1 a {
+  font-family: "PKMN RBYGSC", sans-serif;
+  text-decoration: none;
+  color: white;
+}
+nav h1 span {
+  font-family: "PKMN RBYGSC", sans-serif;
+  color: #82368D;
+}
+nav h1:hover {
+  font-family: "PKMN RBYGSC", sans-serif;
+  color: #82368D;
+}
+nav h1:hover a {
+  font-family: "PKMN RBYGSC", sans-serif;
+  text-decoration: none;
+  color: #82368B;
+}
+nav h1:hover span {
+  font-family: "PKMN RBYGSC", sans-serif;
+  color: white;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 3em;
+  visibility: visible;
+}
+nav ul li {
+  padding-bottom: 0.5em;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+nav ul li:hover {
+  border-bottom: 1px solid #f0f4f4;
+}
+nav .burger-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2em;
+  height: 2em;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+}
+nav .burger-menu span {
+  display: block;
+  width: 100%;
+  height: 0.25em;
+  background: #fff;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  nav {
+    align-items: center;
+  }
+  nav .burger-menu {
+    display: flex;
+    padding-top: 1em;
+    gap: 0.2em;
+  }
+  nav ul {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    margin: 0;
+    padding: 1em 0;
+    background: rgb(255, 255, 255);
+    width: 100%;
+    z-index: 1;
+  }
+  nav ul li {
+    color: #82368B;
+    margin: 1em;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: "PKMN RBYGSC", sans-serif;
+  }
+  nav.open ul {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@media (max-width: 425px) {
+  nav {
+    align-content: center;
+    justify-content: space-around;
+  }
+  nav h1 {
+    letter-spacing: 0;
+  }
+}
 .coworking {
+  margin-top: 2em;
   display: flex;
   flex-direction: column;
 }
@@ -28,6 +145,9 @@ body {
   padding: 10px;
 }
 .coworking .container .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 1em;
   text-align: left;
 }
@@ -91,6 +211,72 @@ body {
   }
   .coworking .container .left, .coworking .container .right {
     width: 100%;
+  }
+}
+.partenaire {
+  padding-left: 5%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #E1E5E6;
+}
+.partenaire div img {
+  width: 10%;
+}
+
+.social {
+  padding-top: 4em;
+  display: flex;
+  align-items: center;
+  background-color: #E1E5E6;
+}
+.social div {
+  padding-left: 7%;
+  display: flex;
+  gap: 1em;
+}
+.social div img {
+  width: 15%;
+}
+
+@media (max-width: 768px) {
+  .social div h3 {
+    font-size: 0.5em;
+  }
+}
+@media (max-width: 425px) {
+  .social {
+    padding-top: 1em;
+  }
+}
+footer {
+  padding: 1.1em;
+  display: flex;
+  background-color: #E1E5E6;
+  align-items: center;
+  justify-content: center;
+}
+footer .container {
+  display: flex;
+  gap: 15rem;
+}
+footer .container p {
+  font-size: 0.7em;
+}
+footer .container p span {
+  color: #82368D;
+}
+footer .container p strong {
+  color: #82368D;
+}
+
+@media (max-width: 425px) {
+  footer .container {
+    gap: 5rem;
+  }
+  footer .container p {
+    font-size: 0.3em;
   }
 }
 

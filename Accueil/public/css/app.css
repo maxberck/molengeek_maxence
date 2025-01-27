@@ -336,9 +336,21 @@ nav .burger-menu span {
   background-color: #E1E5E6;
 }
 .partenaire div img {
+  animation: gros 2.5s ease-in-out infinite;
   width: 10%;
 }
 
+@keyframes gros {
+  0% {
+    transform: scale(1) translateY(0);
+  }
+  50% {
+    transform: scale(1.1) translateY(-10px);
+  }
+  100% {
+    transform: scale(1) translateY(0);
+  }
+}
 .social {
   padding-top: 4em;
   display: flex;
@@ -351,9 +363,27 @@ nav .burger-menu span {
   gap: 1em;
 }
 .social div img {
+  animation: vibro 2.5s ease-in-out infinite;
   width: 15%;
 }
 
+@keyframes vibro {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-2px, 2px);
+  }
+  50% {
+    transform: translate(2px, -2px);
+  }
+  75% {
+    transform: translate(-2px, 2px);
+  }
+  100% {
+    transform: translate(2px, -2px);
+  }
+}
 @media (max-width: 768px) {
   .social div h3 {
     font-size: 0.5em;

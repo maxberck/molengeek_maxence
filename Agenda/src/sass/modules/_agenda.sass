@@ -17,6 +17,7 @@ h1
     li
       position: relative
       padding: 15px
+      // faire pencher les div
       transform: rotate(8deg)
       width: 60%
       background: #fff
@@ -31,8 +32,10 @@ h1
         justify-content: center
         align-items: center
         padding: 20px
+        //permet qu'elle ne soit pas plus grande que la div mere
         box-sizing: border-box
         box-shadow: 0 20px 20px rgba(0, 0, 0, 0.8)
+        // pencher la balise time
         transform: translateX(-76px)
         font-size: 20px
         overflow: hidden
@@ -64,9 +67,9 @@ h1
         width: 70%
         padding: 10px
         font-size: 0.8rem
-        transform: rotate(0deg) // Supprime la rotation sur les très petits écrans pour la lisibilité
+        transform: rotate(0deg) // supprime la rotation
         time
           font-size: 0.8rem
 
       li:hover
-        font-size: 0.85rem // Effet mini
+        font-size: 0.85rem // réduire l'impact du hover
